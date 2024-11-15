@@ -309,7 +309,7 @@ translator:
 # 次翻译器，英文
 melt_eng:
   dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
-  enable_sentence: false   # 禁止造句
+  enable_sentence: true   # 禁止造句
   enable_user_dict: false  # 禁用用户词典
   initial_quality: 1.1     # 初始权重
   comment_format:          # 自定义提示码
@@ -331,7 +331,7 @@ cn_en:
 # 自定义短语：custom_phrase.txt
 custom_phrase:
   dictionary: ""
-  user_dict: custom_phrase  # 可以修改这里，改成自己的 txt 文件
+  user_dict: custom_phrase_enhance  # 可以修改这里，改成自己的 txt 文件
   db_class: stabledb        # 只读数据库，无法动态调频；设为 tabledb 可以动态调频
   enable_completion: false  # 补全提示
   enable_sentence: false    # 禁止造句
