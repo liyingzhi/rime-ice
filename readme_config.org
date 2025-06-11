@@ -1,0 +1,7 @@
+* weasel.custom.yaml 配置
+#+begin_src yaml
+  # 对于 exmacs.exe 来说，进入 ascii_mode 模式
+  patch:
+    "app_options/emacs.exe":
+      ascii_mode: true
+#+end_src
