@@ -1,8 +1,15 @@
+__include: octagram   #启用语法模型
+#语法模型
 patch:
   grammar:
-    language: amz-v2n3m1-zh-hans
-    collocation_max_length: 5
+    language: wanxiang-lts-zh-hans
+    collocation_max_length: 6
     collocation_min_length: 2
+    collocation_penalty: -14
+    non_collocation_penalty: -6
+    weak_collocation_penalty: -101
+    rear_penalty: -18
+
   translator/contextual_suggestions: true
   translator/max_homophones: 7
   translator/max_homographs: 7
